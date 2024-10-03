@@ -1,0 +1,12 @@
+<section class="product-grid">
+  <div class="container">
+    <div class="row">
+      {% for product in collections['your-collection-handle'].products limit: 3 %}
+        <div class="product-card">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <div class="plus-symbol" data-product-id="{{ product.id }}">+</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

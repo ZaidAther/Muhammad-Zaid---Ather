@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }} - {{ shop.name }}</title>
+
+    <!-- Shopify dynamically injects important resources here -->
+    {{ content_for_header }}
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}">
+
+    <!-- Link to your custom JS file -->
+    <script src="{{ 'scripts.js' | asset_url }}"></script>
+
+    <!-- Additional fonts and styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap">
+</head>
+
+<body>
+    <!-- Dynamically injected content for the page -->
+    {{ content_for_layout }}
+
+    <div class="desktop-22">
+        <!-- Section: Image and Gift Finder -->
+        <div class="lb">
+            <div class="lb-inner">
+                <div class="frame-parent">
+                    <img class="frame-child" alt="" src="{{ 'group-1000007776.svg' | asset_url }}" />
+                    <img class="frame-item" alt="" src="{{ 'group-1000007775.svg' | asset_url }}" />
+                </div>
+            </div>
+            <div class="find-the-ideal-gift-for-your-l-wrapper">
+                <div class="find-the-ideal">
+                    Find the ideal gift for your loved ones.
+                </div>
+            </div>
+            <div class="button-background-parent">
+                <div class="button-background"></div>
+                <a class="choose-yours">choose gift</a>
+                <div class="vector-wrapper">
+                    <img class="frame-inner" alt="" src="{{ 'line-15.svg' | asset_url }}" />
+                </div>
+                <div class="instance-child"></div>
+            </div>
+        </div>
+
+        <!-- Section: The Gift Guide -->
+        <section class="rectangle-parent">
+            <div class="rectangle-div"></div>
+            <img class="group-icon" alt="" src="{{ 'group-1000008197.svg' | asset_url }}" />
+            <div class="frame-child1"></div>
+            <div class="group-1000008102default"></div>
+            <h1 class="the-gift-guide">The Gift Guide</h1>
+            <div class="discover-joy-your">
+                Discover Joy: Your Ultimate Holiday Gift Destination. Explore our
+                curated selection and find the perfect gifts to delight your loved
+                ones this holiday season.
+            </div>
+            <div class="component-207">
+                <div class="component-207-child"></div>
+                <div class="choose-yours1">Shop Now</div>
+                <div class="component-207-inner">
+                    <img class="line-icon" alt="" src="{{ 'line-15-1.svg' | asset_url }}" />
+                </div>
+                <div class="component-207-item"></div>
+            </div>
+        </section>
+
+       
+    </div>
+
+    <!-- Shopify's content injected here -->
+    {{ content_for_footer }}
+</body>
+
+</html>

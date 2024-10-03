@@ -1,0 +1,16 @@
+{% layout 'theme' %}
+
+<div class="homepage">
+    {% if collections.frontpage.products.size > 0 %}
+        <ul>
+            {% for product in collections.frontpage.products %}
+            <li class="product-card">
+                <img src="{{ product.featured_image | img_url: 'medium' | default: 'path-to-default-image.jpg' }}" alt="{{ product.title }}">
+                <div class="plus-symbol" data-product-handle="{{ product.handle }}">+</div>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No featured products available.</p>
+    {% endif %}
+</div>
